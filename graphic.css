@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    font-family: Microsoft Sans Serif;
+}
+body{
+    background-color: rgb(234, 243, 248);
+}
+header{
+    height: 10vh;
+    width: 90%;
+    background-color: khaki;
+    margin: 20px auto;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+
+.banner{
+    width: 87%;
+    height: 80vh;
+    background-image: url(image2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+.banner h1{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px black;
+}
+#cat{
+    width: 95%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.tag{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    padding: 10px ;
+    justify-content: space-between;
+
+}
+.tag .h3{
+    margin: 0 auto 0 0;
+    font-size: x-large;
+    font-weight: bolder
+}
+.tag .h6{
+    cursor: pointer;
+    display: none;
+    font-size: smaller;
+    background: transparent;
+    border: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 0 0 auto;
+}
+.categories{
+    width: 90%;
+    text-align: center;
+    height: 100%;
+    padding: 20px 10px;
+    
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;  
+}
+.item{
+    color: white;
+    padding: 30px 0;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 13%;
+    box-sizing: content-box;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: lighter;
+    transition: all .5s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.item:hover{
+    transform: scale(1.1);
+    /* transform: translateY(-10px); */
+}
+.item1{
+    background-image: linear-gradient(0deg,#00000083,#0c0c0c00),url(https://farm7.staticflickr.com/6016/5932323354_050754385f_z.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item2{
+    background-image: linear-gradient(0deg,#0000009d,#fcfcfc1f),url(https://th.bing.com/th/id/R.bb2cd79234d657966321f0d32eafd362?rik=VsV1Y5VKqPGFRQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-mLiBV_wjebo%2fUDslRF-pNCI%2fAAAAAAAAISY%2fnkJpB1_pURA%2fs1600%2fNight%2bCity%2bGlow%2bWallpapers%2b4.jpg&ehk=mUv%2by7CaBeg8e51332LoVwvs%2fNOqKckRPMGNfJbctoc%3d&risl=&pid=ImgRaw&r=0);
+    background-position: center;
+    background-size: cover;
+}
+.item3{
+    background-image: linear-gradient(0deg,#00000083,#0c0c0c00),url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/moraine-lake-and-the-valley-of-the-ten-peaks-in-the-royalty-free-image-1571062944.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item4{
+    background-image: linear-gradient(0deg,#00000083,#0c0c0c00),url(https://i.pinimg.com/736x/a1/e0/a6/a1e0a63970284c14c7cd7eb22289f2aa--snow-skiing-winter-sports.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item5{
+    background-image: linear-gradient(0deg,#00000083,#0c0c0c00),url(https://www.worldatlas.com/r/w1200/upload/ff/49/57/shutterstock-1509720656.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item6{
+    background-image: linear-gradient(0deg,#00000083,#0c0c0c00),url(https://s3-cdn.designerjourneys.com/media/activities/adventure.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.special{
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.card{
+    width: 90%;
+    height: 100%;
+    border: 1px solid black;
+    display: grid;
+    border-radius: 30px;
+    grid-template-areas: 'img''head''subhead''price';
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card img{
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1px;
+    border-radius: 20px;
+}
+.card .title{
+    font-weight:600;
+    margin: 6px;
+    grid-area: head;
+    padding-left: 5px;
+}
+.card .title2{
+    padding-left: 17px;
+    color: rgb(141, 127, 127);
+    grid-area: subhead;
+    font-weight: lighter;
+    margin: -1px;
+}
+.card .cost{
+    font-weight: 900;
+    margin: 3px;
+    padding-left: 9px;
+    grid-area: price;
+}
+.popular{
+    width: 90%;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.place{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: grid;
+    place-items: end;
+    padding: 20px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
+}
+.place .detail{
+    opacity: 0;
+    transition: all 1s ease;
+}
+.place:hover .detail{
+    opacity: 1;
+}
+@media  screen and (min-width:450px) {
+    .place1{
+        grid-column: 1/5;
+    }
+    .place2{
+        grid-column: 1/3;
+    }
+    .place3{
+        grid-column: 3/5;
+    }
+    .place5{
+        grid-column: 2/4;
+    }
+}
+.place1{
+    color: white;
+    background-image: linear-gradient(0deg,#0000009d,#fcfcfc1f),url('https://image.cnbcfm.com/api/v1/image/105594325-1543312152022gettyimages-500806746.jpeg?v=1579189242');
+    background-position: center;
+    background-size: cover;
+}
+.place2{
+    background-image: linear-gradient(0deg,#0000009d,#fcfcfc1f),url('https://th.bing.com/th/id/OIP.SeCxLUAea32E7EYWyQ2z_QHaEK?pid=ImgDet&rs=1');
+    background-position: center;
+    background-size: cover;
+}
+.place3{
+    background-image: linear-gradient(0deg,#0000009d,#fcfcfc1f),url('http://wonderfulengineering.com/wp-content/uploads/2016/01/singapore-wallpaper-33.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.place4{
+    background-image: linear-gradient(0deg,#0000009d,#fcfcfc1f),url('https://th.bing.com/th?id=OIF.sllZgwq%2f2eTfbFJuhAhRtg&pid=ImgDet&rs=1');
+    background-position: center;
+    background-size: cover;
+}
+.place6{
+    background-image: linear-gradient(0deg,#0000009d,#fcfcfc1f),url('https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateParis_Heroshutterstock_112137761.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.place5{
+    background-image: linear-gradient(0deg,#0000009d,#fcfcfc1f),url('https://th.bing.com/th/id/OIP.44obXX9WlCtibQLAuUhnBQHaEo?pid=ImgDet&rs=1');
+    background-position: center;
+    background-size: cover;
+}
+#footer{
+    background-color: rgba(128, 128, 128, 0.219);
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+}
+ footer{
+    width: 90%;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1.2fr repeat(3,1fr);
+    gap: 10px;
+    text-align: left;
+}
+.col{
+    height: 100%;
+    width: 100%;
+}
+.col hr{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border: none;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.col h4,.col h3{
+    font-weight: bolder;
+    text-align: center;
+}
+.col p{
+    cursor: pointer;
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: start;
+    margin-top: 20px;
+}
+.container{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 90%;
+    height: 300px;
+}
+.container .box{
+    height: 300px;
+    width: 2500px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6,1fr);
+}
+.container .box .item{
+    height: 170px;
+    padding: 10px;
+}
+@media  screen and (max-width:450px) {
+    .banner{
+        padding-top: 30px;
+        background-position: 90%;
+    }
+    .banner h1{
+        font-size: 2em;
+    }
+    #cat{
+        height: 230px;
+        overflow: hidden;
+        transition: all .1s linear;
+    }
+    .tag .h6{
+        display: block;
+    }
+    .categories{
+        padding: 10px;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .special{
+        grid-template-columns: 1fr;
+        padding: 1px;
+    }
+    .card img{
+        width: 150px;
+    }
+    .card{
+        padding: 10px 0 10px 10px;
+        grid-template-areas: 'img img head head'
+        'img img subhead subhead''img img price price';
+        width: 100%;
+    }
+    .popular{
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        gap: 20px;
+    }
+ footer{
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 50px;
+    }
+    .container .box{
+        width: 1600px;
+    }
+}
+#form{
+    transition: all .4s ease;
+    width: 90%;
+    height: 80%;
+    backdrop-filter: blur(15px) saturate(200%);
+    -webkit-backdrop-filter: blur(15px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.27);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: grid;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+label{
+    width: 100%;
+    color: white;
+    font-size: large;
+}
+input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: larger;
+    height: 80%;
+    color: white;
+    border-bottom: 3px solid white;
+}
+.boar, .dest,.dt,.pp{
+    width: 100%;
+    height: 100%;
+}
+#form:hover{
+    clip-path: inset(0 0 0 0);
+}
+@media  screen and (min-width:450px){
+    #form
+    {
+        clip-path: inset(84% 4% 1% 4%);
+        padding: 40px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 80px;
+    }
+    .boar, .dest{
+        width: 100%;
+        height: 100%;
+    }
+    .btn{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+.btn{
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+@media  screen and (max-width:450px){
+    #form
+    {
+        clip-path: inset(84% 8% 1% 8%);
+        padding: 20px;
+        gap: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+    }
+    .boar, .dest{
+        width: 100%;
+        height: 100%;
+    }
+    label{
+        font-size: smaller;
+    }
+    input{
+        font-size: smaller;
+    }
+}
